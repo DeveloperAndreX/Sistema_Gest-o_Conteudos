@@ -8,7 +8,7 @@ use sistema\Nucleo\Helpers;
 // criação do grupo da rota. 
 // encontrar os erros dessa rotas: 
 
-/*
+
 try {
 
     SimpleRouter::setDefaultNamespace('sistema\Controlador');
@@ -19,12 +19,13 @@ SimpleRouter::get(URL_SITE.'post/{id}', 'SiteControlador@post');
 SimpleRouter::get(URL_SITE.'categoria/{id}','SiteControlador@categoria');
 SimpleRouter::get(URL_SITE.'buscar', 'SiteControlador@buscar');
 
+
 SimpleRouter::get(URL_SITE. '404', 'SiteControlador@erro404');
 
 // catch:
 }catch (Pecee\SimpleRouter\Exceptions\NotFoundHttpException $ex) {
     if(Helpers::localhost()) {
-        // obtem a mensagem com getMessage()  caso else redireciona para pagina de Erro 404
+        // obtem a mensagem com getMessage()  caso else redireciona para pagina de Erro 404.
         echo $ex->getMessage();
          }else {
 
